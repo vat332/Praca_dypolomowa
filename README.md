@@ -6,6 +6,7 @@ Repoztorium będzie prowadzone w celu systematyzacji oraz do utrzymania kontroli
 * [Promotor](#promotor)
 * [Ports](#ports)
 * [Testy](#tests)
+* [Przydatne linki](#przydatne linki)
 ## Technologie
 * Django
 * PostgreSQL
@@ -24,3 +25,5 @@ Repoztorium będzie prowadzone w celu systematyzacji oraz do utrzymania kontroli
 * Vitaliy Yakovyna
 ## Pgadmin:
 ## Tests:
+## Przydatne linki:
+https://readme.so/editor
