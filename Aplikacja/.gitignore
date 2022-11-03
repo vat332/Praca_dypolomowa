@@ -1,4 +1,4 @@
-.idea/
+Backend/.idea/
 
 # Created by https://www.gitignore.io/api/macos,linux,django,python,pycharm
 
@@ -10,6 +10,7 @@ __pycache__/
 local_settings.py
 db.sqlite3
 media
+.idea/
 
 ### Linux ###
 *~
