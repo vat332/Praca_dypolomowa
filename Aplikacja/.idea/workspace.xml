@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec1ccd12-af23-4ab5-a225-63143f9f7aba" name="Changes" comment="" />
+    <list default="true" id="6e38ac63-6478-4091-9441-cf127c77f6dc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2H2f9Eah3uKxKevDq3g3WZvJSKC" />
+  <component name="ProjectId" id="2H2edNE7FDK7PJZFpAwNskz5VsJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,43 +24,26 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Sebastian/Praca_dypolomowa/Aplikacja"
+    "last_opened_file_path": "C:/Sebastian/Praca_dypolomowa/Aplikacja",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pathVariables"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Backend" type="Python.DjangoServer" factoryName="Django server">
-      <module name="Backend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Sebastian\Praca_dypolomowa\Aplikacja" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ec1ccd12-af23-4ab5-a225-63143f9f7aba" name="Changes" comment="" />
-      <created>1667487945472</created>
+      <changelist id="6e38ac63-6478-4091-9441-cf127c77f6dc" name="Changes" comment="" />
+      <created>1667487692496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1667487945472</updated>
-      <workItem from="1667487998391" duration="75000" />
+      <updated>1667487692496</updated>
+      <workItem from="1667487693951" duration="249000" />
+      <workItem from="1667488358853" duration="2743000" />
     </task>
     <servers />
   </component>
