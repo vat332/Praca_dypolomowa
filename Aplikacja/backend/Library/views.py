@@ -4,7 +4,6 @@ from rest_framework.response import Response
 from .models import Book
 from .serializers import BookSerializer
 
-
 @api_view(['GET'])
 def book_list(request):
     if request.method == 'GET':
