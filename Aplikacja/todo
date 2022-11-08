@@ -1,0 +1,13 @@
+BAZA DANYCH:
+  -zmienić połącznie między rental a book_author
+  -Dodać tabelke do opinii
+  -zastanowić się nad tabela language
+ 
+FRONT:
+  -bulma
+  -saas
+  -jakis problem z odpaleniem
+  
+Backend:
+  -paginacja
+  -filtry
