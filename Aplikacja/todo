@@ -11,3 +11,4 @@ FRONT:
 Backend:
   -paginacja
   -filtry
+  -swagger https://swagger.io/docs/specification/describing-parameters/
