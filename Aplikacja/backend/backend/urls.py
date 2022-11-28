@@ -32,6 +32,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('books/', views.book_list),
     path('books/<int:pk>/', views.book_detail),
+    path('rentals/', views.rental_list),
+    path('rentals/<int:pk>/', views.rental_detail),
+    path('customers/', views.customer_list),
+    path('customers/<int:pk>/', views.customer_detail),
+    path('authors/', views.author_list),
+    path('authors/<int:pk>/', views.author_detail),
+    path('languages/', views.language_list),
+    path('languages/<int:pk>/', views.language_detail),
     path('swagger', schema_view.with_ui('swagger', cache_timeout=0), name="swagger-schema"),
 
 ]
