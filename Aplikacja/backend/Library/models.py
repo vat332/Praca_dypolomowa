@@ -3,8 +3,8 @@ from django.db import models
 
 # Create your models here.
 class Language(models.Model):
-    language_code = models.CharField(verbose_name="Skrótowy kod języka", max_length=10)
-    language_name = models.CharField(verbose_name="Nazwa języka", max_length=100)
+    languageCode = models.CharField(verbose_name="Skrótowy kod języka", max_length=10)
+    languageName = models.CharField(verbose_name="Nazwa języka", max_length=100)
 
     def __str__(self):
         return "%s %s" % (self.language_name, self.language_code)
