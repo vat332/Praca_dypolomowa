@@ -51,3 +51,9 @@
 
 1. Go to cointainer with BACKEND
 2. Write `python manage.py test ` nazwa aplikacji (np: users)
+
+## Update package:
+
+1. `npm install -g npm-check-updates`
+2. `ncu --upgrade`
+3. `npm install`
