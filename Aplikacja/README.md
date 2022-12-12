@@ -27,6 +27,8 @@
 - Frontend - `localhost:3000`
 - Backend - `localhost:8000`
 - Backend-admin `localhost:8000/admin`
+  login: admin
+  hasło: 1234
 - Backend-swagger `localhost:8000/swagger`
 - Pgadmin - `localhost:5050`
 
