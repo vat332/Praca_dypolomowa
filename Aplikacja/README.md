@@ -1,14 +1,15 @@
-# Application like pastebin
+# Biblioteka z systemem rekomendacyjnym
 
-## Table of Contents
+## Spis treści
 
-- [Technologies](#technologies)
-- [Authors](#authors)
-- [Commands](#commands)
-- [Ports](#[ports])
+- [Technologie](#technologie)
+- [Autor](#autor)
+- [Komendy](#komendy)
+- [Porty](#[porty])
 - [RUN_TEST](#[RUN_TEST])
+- [Aktualizowanie paczek](#[Aktualizowanie paczek])
 
-## Technologies
+## Technologie
 
 - Django
 - PostgreSQL
@@ -18,43 +19,43 @@
 - PRETTIER
 - DOCKER
 
-## Authors:
+## Autor:
 
 - [@Sebastian Murawski](https://www.github.com/vat332)
 
-## Ports:
+## Porty:
 
 - Frontend - `localhost:3000`
 - Backend - `localhost:8000`
 - Backend-admin `localhost:8000/admin`
-  login: admin
-  hasło: 1234
+  - login: admin
+  - hasło: 1234
 - Backend-swagger `localhost:8000/swagger`
 - Pgadmin - `localhost:5050`
 
-## Commands:
+## Komendy:
 
-1. Install precommit `pre-commit install`//Not ready
-2. Build whole projects `docker-compose build` or `docker-compose up`
-3. Build only frontend `docker-compose build --no-cache frontend`
-4. Create superuser. Go to backend container `python manage.py createsuperuser`
-5. Migration. Go to backend container `python manage.py makemigrations <APP_NAME>` next `python manage.py migrate`
-6. Load Fixtures: `python manage.py loaddata <Name>.json`
+1. Instalacja precommita `pre-commit install`// Jeszcze nie gotowe
+2. Budowanie całego projektu `docker-compose build` or `docker-compose up`
+3. Budowanie tylko frontendu `docker-compose build --no-cache frontend`
+4. Tworzenie konta admina. Musisz wejść do kontenera z backendem `python manage.py createsuperuser`// Opcjonalnie
+5. Migracja `python manage.py makemigrations <APP_NAME>` next `python manage.py migrate`
+6. Podstawowe dane do bazy danych: `python manage.py loaddata <Name>.json`// Jeszcze nie gotowe
 
 ## Pgadmin:
 
-1. DEFAULT LOGIN: `admin@admin.com`
-2. DEFAULT PASSWORD: `admin`
+1. Login: `admin@admin.com`
+2. Hasło: `admin`
    <img src="https://user-images.githubusercontent.com/52125396/159588369-222c39bb-a65c-4903-9d83-d2937c8293b8.png" width="45%"></img>
 
 ## RUN_TEST:
 
-!!!! IMPORTANT Tests must begin with the word `test` !!!!
+!!!! Ważne Testy musza się zaczynać od słowa `test` !!!!
 
-1. Go to cointainer with BACKEND
-2. Write `python manage.py test ` nazwa aplikacji (np: users)
+1. Przejdź do kontenera z Backend
+2. Wpisz `python manage.py test ` nazwa aplikacji (np: users)
 
-## Update package:
+## Aktualizowanie paczek:
 
 1. `npm install -g npm-check-updates`
 2. `ncu --upgrade`
