@@ -1,6 +1,9 @@
 from django.db import models
 
 # Create your models here.
+class Category(models.Model):
+    name = models.CharField(verbose_name="Nazwa kategorii",blank=False,max_length=50)
+    description = models.TextField(verbose_name="Opis kateorii",blank=True)
 
 class Customer(models.Model):
     name = models.CharField(verbose_name="Imię klienta", max_length=255)
@@ -33,26 +36,27 @@ class Book(models.Model):
     title = models.CharField(max_length=200,verbose_name="Pełna nazwa książki")
     isbn13 = models.CharField(max_length=13,verbose_name="Numer ISBN, 13 znakowy")
     pages = models.IntegerField(verbose_name="Ilość stron")
-    release_date = models.DateField(auto_now=False,verbose_name="Data premiery książki")
+    release_date = models.DateField(auto_now=True,verbose_name="Data premiery książki")
     publisher = models.CharField(verbose_name="Wydawnictwo książki", max_length=255)
-    language = models.ForeignKey(Language, on_delete=models.CASCADE,blank=True)
+    language = models.ForeignKey(Language, on_delete=models.CASCADE,blank=True,verbose_name="Język")
+    category = models.ForeignKey(Category,on_delete=models.CASCADE,verbose_name="Gatunek książki",blank=False)
 
     def __str__(self):
         return "%s, %s" % (self.title, self.release_date)
 
 class BookAuthor(models.Model):
-    book_id = models.ForeignKey(Book, null=False, on_delete=models.CASCADE, blank=False)
-    author_id = models.ForeignKey(Author, null=False,on_delete=models.CASCADE, blank=False)
+    book_id = models.ForeignKey(Book, null=False, on_delete=models.CASCADE, blank=False,verbose_name="Książka")
+    author_id = models.ForeignKey(Author, null=False,on_delete=models.CASCADE, blank=False,verbose_name="Autor")
 
     def __str__(self):
         return "%s, %s" % (self.book_id, self.author_id)
 
 
 class Rental(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE)
-    start_time = models.DateTimeField(verbose_name="Początek wypożyczenia")
-    end_time = models.DateTimeField(verbose_name="Koniec wypożyczenia")
-    customer = models.ForeignKey(Customer, null=False, on_delete=models.CASCADE,blank=False)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE,verbose_name="Nazwa książki")
+    start_time = models.DateTimeField(auto_now=True, verbose_name="Początek wypożyczenia")
+    end_time = models.DateTimeField(auto_now=True, verbose_name="Koniec wypożyczenia")
+    customer = models.ForeignKey(Customer, null=False, on_delete=models.CASCADE,blank=False,verbose_name="Osoba która wypożycza")
     
     def __str__(self):
         return "%s, %s" % (self.book, self.customer)
