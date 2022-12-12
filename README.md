@@ -4,6 +4,7 @@ Repoztorium będzie prowadzone w celu systematyzacji pracy oraz do utrzymania ko
 * [Autor](#autor)
 * [Promotor](#promotor)
 * [Przydatne linki](#przydatne linki)
+
 ## Autor: 
 * Sebastian Murawski 155082 - Informatyka ogólna
 * - [@vat332](https://www.github.com/vat332)
