@@ -47,16 +47,12 @@ class BookAuthor(models.Model):
     def __str__(self):
         return "%s, %s" % (self.book_id, self.author_id)
 
-class BookRental(models.Model):
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    rental_date = models.DateTimeField(auto_now=True, verbose_name="Data wypożyczenia książki")
-    
-    def __str__(self):
-        return "%s, %s" % (self.customer, self.rental_date)
 
 class Rental(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
-    book_rental = models.ForeignKey(BookRental, on_delete=models.CASCADE)
+    start_time = models.DateTimeField(verbose_name="Początek wypożyczenia")
+    end_time = models.DateTimeField(verbose_name="Koniec wypożyczenia")
+    customer = models.ForeignKey(Customer, null=False, on_delete=models.CASCADE,blank=False)
     
     def __str__(self):
-        return "%s, %s" % (self.book, self.book_rental)
+        return "%s, %s" % (self.book, self.customer)
