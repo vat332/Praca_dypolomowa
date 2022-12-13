@@ -25,3 +25,4 @@ zope.event==4.5.0
 zope.interface==5.4.0
 PyJWT==2.4.0
 django-cors-headers==3.11.0
+djangorestframework>=3.14.0
