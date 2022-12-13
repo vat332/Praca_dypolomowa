@@ -5,6 +5,9 @@ class Category(models.Model):
     name = models.CharField(verbose_name="Nazwa kategorii",blank=False,max_length=50)
     description = models.TextField(verbose_name="Opis kateorii",blank=True)
 
+    def __str__(self):
+        return "%s" % (self.name)
+
 class Customer(models.Model):
     name = models.CharField(verbose_name="Imię klienta", max_length=255)
     surname = models.CharField(verbose_name="Nazwisko klienta", max_length=255)
